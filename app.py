@@ -14,6 +14,7 @@ DATA_DIR = os.path.join(BASE_DIR, "data")
 
 
 @app.post("/perform_query/")
+@no_type_check
 def perform_query():
     req = request.json
     try:
